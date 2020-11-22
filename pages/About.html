@@ -6,8 +6,6 @@
     <link href="../css/index.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="JavaScript/index.js"></script>
 </head>
 
 <!-- Navigation Bar -->
@@ -41,19 +39,18 @@
 <a href="https://docs.google.com/document/d/1R8a_nDnK4jU8saWUVK28aqBOZMNTjU0s1rTNltGXnoY/edit?usp=sharing">
     <div id="see-resume" class="primary-button">see resume</div></a>
 <div class="side-menu">
-    <div id="summary-tab" class="side-tab">
-        <img id="tab1" src="../icons/side-tab1.svg" alt="Summary">
+    <a id="summary-tab" class="side-tab" href="#about-me-body" data-offset="80"><div>
+        <img id="tab1" src="../icons/side-tab1.svg" alt="Summary"></div>
         <p>Summary</p>
-    </div>
-    <div id="ux-skills-tab" class="side-tab">
-        <img id="tab2" src="../icons/side-tab2.svg" alt="My UX Skills">
-        <p>My UX</p>
-        <p>Skills</p>
-    </div>
-    <div id="tool-set-tab" class="side-tab">
-        <img id="tab3" src="../icons/side-tab3.svg" alt="Tool Set">
+    </a>
+    <a id="ux-skills-tab" class="side-tab" href="#my-skills-body" data-offset="80"><div>
+        <img id="tab2" src="../icons/side-tab2.svg" alt="My UX Skills"></div>
+        <p>My UX<br>Skills</p>
+    </a>
+    <a id="tool-set-tab" class="side-tab" href="#tool-set-body" data-offset="80"><div>
+        <img id="tab3" src="../icons/side-tab3.svg" alt="Tool Set"></div>
         <p>Tool Set</p>
-    </div>
+    </a>
     <img class="side-menu-icon" id="side-close" src="../icons/side-menu-icon.svg" width=30px>
 </div>
 
@@ -96,7 +93,7 @@
     <h1>About</h1>
     <img src="../images/my-profile-image.jpg" width="220px" alt="My profile photo">
     <section class='about-me'>
-        <h2 class='greeting'>Nice to meet you! I am Lan—</h2>
+        <h2 class='greeting'>Nice to meet you! <wbr>I am Lan—</h2></h2>
         <p>A keen interest in the UI branding and language used to communicate with the users, and attention to detail in micro-interactions. The user’s experience can be truly delightful when these elements are considered, as demonstrated in the <a class="hyperlink" href="#">Endangered Species Redesign</a>.</p>
         <p>Also dabble in watercolour in free time as "Teri Akimoto" and love to apply both the medium’s subtlety and vibrancy in my design. A selection can be found in Illustrations.</p>
     </section>
@@ -173,6 +170,8 @@
 </footer>
 
 <!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../JavaScript/About.js"></script>
 <script>
     var menu = document.getElementById("menu");
     function openmenu(){

@@ -6,8 +6,6 @@
     <link href="../css/index.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="JavaScript/index.js"></script>
 </head>
 
 <!-- Navigation Bar -->
@@ -36,6 +34,23 @@
         <img id="open-icon" src="../icons/menu-open.svg" width=50px height=50px onclick="openmenu()">
     </div>
 </nav>
+
+<!-- Side Navigation -->
+<div class="side-menu">
+    <div id="summary-tab" class="side-tab">
+        <img id="tab1" src="../icons/side-tab1.svg" alt="Summary">
+        <p>Summary</p>
+    </div>
+    <div id="ux-skills-tab" class="side-tab">
+        <img id="tab2" src="../icons/side-tab2.svg" alt="My UX Skills">
+        <p>My UX<br>Skills</p>
+    </div>
+    <div id="tool-set-tab" class="side-tab">
+        <img id="tab3" src="../icons/side-tab3.svg" alt="Tool Set">
+        <p>Tool Set</p>
+    </div>
+    <img class="side-menu-icon" id="side-close" src="../icons/side-menu-icon.svg" width=30px>
+</div>
 
 <!-- Full-screen Menu -->
 <ul id="menu" class="overlay-menu">
@@ -70,6 +85,14 @@
     </div>
 </ul>
 
+<!-- Hero -->
+<div id="endangered-body">
+    <section id="endangered-hero">
+        <h1>Endangered Species Redesign</h1>
+        <img src="../images/my-profile-image.jpg" width="220px" title="Endangered Species Final Mockups" alt="Endangered Species Final Mockups">
+    </section>
+</div>
+
 <!-- Footer -->
 <footer>
     <div class="footer-content">
@@ -100,6 +123,8 @@
 </footer>
 
 <!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="JavaScript/index.js"></script>
 <script>
     var menu = document.getElementById("menu");
     function openmenu(){
