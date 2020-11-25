@@ -1,7 +1,8 @@
 
 $(".russian-disabled, .russian").click(function() {
     console.log("russian");
-    $(".greeting").text("Здравстуйте, я Лана.");
+    if (window.innerWidth <= 500) { $(".greeting").html("Здравстуй&shy;те, я Лана.<br><br>");}
+    else { $(".greeting").html("Здравстуй&shy;те, я Лана.");};
     $("#statement").text("Дизайнер & иллюстратор.");
     $("#end-statement").text("Трёхъязычная с обучением в сферах образования и психологии.");
     $(this).addClass("russian");

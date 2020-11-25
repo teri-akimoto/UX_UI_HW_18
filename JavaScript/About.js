@@ -28,7 +28,7 @@ $("#tool-set-tab").click(function(e) {
     },'slow', function() {});
 });
 
-$(".side-menu").mousemove(function() {
+$(".side-menu").click(function() {
     if ($(".side-menu").height() > 20) {
         console.log("shrink!");
         $(this).animate({height: '20'}, 300);

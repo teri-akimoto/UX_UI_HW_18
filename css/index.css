@@ -75,7 +75,7 @@ nav {
     padding: 0;
     background-color: rgb(241, 214, 219);
     backdrop-filter: blur(8px);
-    list-style: none;
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +240,7 @@ nav {
 
 /* Card Styles */
 .wide-card-column {
-    padding: 0;
+    padding: 20px;
     margin: 0;
     width: 100%;
 }
@@ -250,7 +250,7 @@ display: grid;
 grid-template-columns: repeat(12, 1fr);
 grid-template-rows: 1fr 1fr;
 gap: 20px;
-padding: 40px 20px;
+padding: 40px 0;
 }
     .wide-card-content {
         grid-column: -2 / -6;
@@ -278,13 +278,13 @@ padding: 40px 20px;
         cursor:pointer;
     }
         #card-thumbnail1 {
-            background-image: url(../images/endangered\ species\ all\ devices\ cover.png);
+            background-image: url(../images/Endangered/endangered\ species\ all\ devices\ cover.png);
         }
         #card-thumbnail2 {
-            background-image: url(../images/emotion\ cover.png);
+            background-image: url(../images/emotion/emotion\ cover.png);
         }
         #card-thumbnail3 {
-            background-image: url(../images/CORAL\ all\ devices\ cover.png);
+            background-image: url(../images/Coral/CORAL\ all\ devices\ cover.png);
         }
     .card-description {
         padding-bottom: 40px;
@@ -304,12 +304,11 @@ padding: 40px 20px;
 }
 /* -------------------- */
 /* About Page Unique Styles */
-/* Side Navigation */
+/* : Side Navigation */
 .side-menu {
     position: fixed;
-    height: 100vh;
+    height: auto;
     width: calc(100% / 12 + 40px);
-    top: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,12 +316,15 @@ padding: 40px 20px;
     z-index: 99;
     transition: all 1s ease;
 }
-.side-menu a {
+    .about-side {
+        top: 160px;
+    }
+.side-menu a, .side-case-menu a {
     text-decoration: none;
     color: black;
 }    
 .side-tab {
-        margin: 20px auto;
+        margin: 0 auto;
 
     }
     .side-tab p {
@@ -330,6 +332,18 @@ padding: 40px 20px;
     }
 .side-menu-icon {
     display: none;
+}
+.side-case-menu {
+    position: fixed;
+    min-height: auto;
+    width: calc(100% / 12 + 40px);
+    display: flex;
+    /* overflow-x: auto; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 99;
+    transition: all 1s ease;
 }
 #see-resume {
     display: inline-block;
@@ -339,7 +353,7 @@ padding: 40px 20px;
     right: 20px;
     transition: all 0.5s ease;
 }
-/* About Summary */
+/* : About Summary */
 #about-me-body {
     grid-column: 3 / -3;
     grid-row: 1 / span 1;
@@ -363,7 +377,7 @@ padding: 40px 20px;
     #about-me h2 {
         text-align: center;
     }
-/* My UX Skills */
+/* : My UX Skills */
 #my-skills-body {
 display: grid;
 grid-template-columns: repeat(12, 1fr);
@@ -404,7 +418,7 @@ padding: 20px;
         grid-row: 4 / span 1;
     }
 
-/* Tool Set */
+/* : Tool Set */
 #tool-set-body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -471,7 +485,7 @@ padding: 20px;
             background-image: url(../images/photoshop-tile-hover.svg);
         }
     
-/* Case Studies Styles */
+/* : Case Studies Styles */
 #case-studies-body {
     padding-top: 80px;
 }
@@ -494,7 +508,7 @@ padding: 20px;
     gap: 20px;
     padding: 40px 20px;
     }
-/* Footer Styles */
+/* : Footer Styles */
 footer {
     margin-top: 80px;
     padding: 20px;
@@ -514,6 +528,465 @@ footer {
         #footer-header, .footer-content p {
             text-align: center;
         }
+
+/* Endangered Species */
+/* : Navigation */
+.endangered-side {
+    top: 120px;
+}
+/* : Summary Styles */
+.endangered-body h1 {
+    padding-top: 80px;
+    text-align: center;
+}
+.endangered-body {
+    padding: 0 20px;
+    background-color: white;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.summary-body, .problem-statement {
+    padding: 20px;
+    width: auto;
+    background-color: rgba(241, 214, 219, 0.25);
+    margin-bottom: 80px;
+}
+/* : Hero */
+    .case-hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    min-height: 50vh;
+    }
+    .case-img1 {
+        grid-column: 3 / -3;
+        grid-row: 2 / -1;
+        background-image: url(../images/Endangered/endangered-species-all-devices-cover-wide.png);
+        background-size: cover;
+        height: 80%;
+        background-position: center;
+    }
+    .case-hero h1 {
+        text-align: center;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    
+/* : Summary */
+    .summary {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+    }
+        .over-column1 {
+            grid-column: 3 / span 4;
+        }
+        .over-column2 {
+            grid-column: -3 / -6;
+        }
+
+/* : Case Study Styles */
+.case-p-body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: auto;
+    margin-bottom: 80px;
+}
+.case-p-section {
+    grid-column: 3 / -2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+    .case-p-section a, .image-column {
+        grid-column: 5 / -1;
+        width: auto;
+    }
+    .case-p {
+        grid-column: 1 / span 3;
+    }
+    .case-p h2 {
+        margin-top: 0;
+    }
+.click-image {
+    overflow: hidden;
+    height:300px;
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .click-image img {
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .image-description {
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(241, 214, 219, 0.25);
+        backdrop-filter: blur(20px);
+        padding: 20px;
+    }
+    .image-description p {
+        margin: 0 20px 10px 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .bullet-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+        .bullet {
+            width: 14px;
+            height: 14px;
+            border: 1px black solid;
+            border-radius: 100%;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+            .bullet:hover {
+                background-color: rgba(241, 214, 219, 0.25);
+            }
+        .active-bullet {
+            background-color: #0A1E63;
+            width: 14px;
+            height: 14px;
+            border: 1px black solid;
+            border-radius: 100%;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+/* Overlay images */
+.click-overlay {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    text-align: center;
+}
+    .click-overlay img {
+        max-width: 80%;
+        max-height: 80%;
+        width: auto;
+        height: auto;
+    }
+    .click-overlay:target {
+        visibility: visible;
+        outline: none;
+        cursor: default;
+    }
+/* : Problem Statement */
+.problem {
+    grid-column: 3 / -3;
+    text-align: center;
+    overflow: visible;
+}
+.quotation-start {
+    position: absolute;
+    background-image: url(../icons/la_quote-left-solid.svg);
+    width: 32px;
+    height: 32px;
+    left: calc(100vw / 6 - 20px);
+    margin-top: 88px;
+}
+.quotation-end {
+    position: absolute;
+    background-image: url(../icons/la_quote-right-solid.svg);
+    width: 32px;
+    height: 32px;
+    right: calc(100vw / 6 - 20px);
+    margin-bottom: 88px;
+}
+/* : Definition & Ideation */
+.site-map-snip {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    object-fit: cover;
+    height: 160%;
+}
+
+/* : Prototyping & Testing */
+.image-column {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.beta-header {
+    height: 80px;
+}
+.gif img {
+    object-fit: contain;
+    width: 100%;
+}
+.gif, .static-image {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* : Changes to UI */
+.nav-spacing {
+    height: 200px;
+}
+.colour-footer {
+    margin: 20px auto;
+}
+.homepage-UI {
+    height: 500px;
+}
+
+/* : Mobile Usability */
+.navigation-levels {
+    height: 300px;
+}
+.responsive-screens {
+    height: 300px;
+}
+.statistics {
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+}
+    .statistics img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+/* : Mobile Tests */
+.x-ol-body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    width: auto;
+}
+.x-ol-list, .x-ol-images {
+    grid-column: 3 / -3;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    counter-reset: section;
+}
+    .x-ol {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 20px;
+        margin: 0;
+        list-style: none inside;
+        text-align: left;
+    }
+    .x1 {
+        grid-column: 1 / span 2;
+        margin: 0;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+    }
+    .x2 {
+        grid-column: 4 / span 2;
+        margin: 0;
+    }
+    .x3 {
+        grid-column: 7 / span 2;
+        margin: 0;
+    }
+    /* .x1:before, .x2:before, .x3:before {
+        counter-increment: section;
+        content: counter(section) ".";
+        list-style-type: decimal;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    } */
+    .x2 img, .x3 img, .x1 img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        bottom: 0;
+        margin-top: 40px;
+    }
+        .x1 img, .x2 img {
+            object-position: 0 0;
+        }
+        .x3 img {
+            object-position: 0 40%;
+        }
+/* : Final Product */
+.final div {
+    grid-column: 3 / -3;
+    display: flex;
+    flex-direction: column;
+}
+.final-p-section {
+    grid-column: 3 / -1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+}
+    .demo-frame, .demo-frame-mirror {
+        grid-column: 5 / -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        .demo-frame img, .demo-frame-mirror img {
+            object-fit: cover;
+            border-radius: 45px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        }
+        .final-toggle {
+            margin-top: 20px;
+            margin-bottom: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+            .desktop-icon {
+                height: 32px;
+                width: 42px;
+                background-repeat: no-repeat;
+                margin: 0 10px;
+                cursor: pointer;
+            }
+                .desktop-active {
+                    background-image: url(../icons/et_laptop.svg);
+                }
+                .desktop-disabled {
+                    background-image: url(../icons/et_laptop\ disabled.svg);
+                }
+            .mobile-icon {
+                height: 32px;
+                width: 32px;
+                background-repeat: no-repeat;
+                margin: 0 10px;
+                cursor: pointer;
+            }
+                .mobile-active {
+                    background-image: url(../icons/et_tablet.svg);
+                }
+                .mobile-disabled {
+                    background-image: url(../icons/et_tablet\ disabled.svg);
+                }
+.final-p-section-mirror {
+    grid-column: 1 / -3;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+}
+    .case-p-mirror {
+        grid-column: -1 / -4;
+    }
+    .demo-frame-mirror {
+        grid-column: 1 / -5;
+    }
+.center-state {
+    grid-column: 3 / -3;
+}
+.double-p-body {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    list-style-position: inside;
+}
+.alphabetical li {
+    list-style-type: lower-latin;
+}
+.x1-2 {
+    grid-column: 1 / span 5;
+    text-align: right;
+}
+.x2-2 {
+    grid-column: 7 / span 5;
+}
+.x1-2 img, .x2-2 img {
+    height: 400px;
+    object-fit: cover;
+    bottom: 0;
+    margin-top: 40px;
+}
+.demo-frame-1-2 img, .demo-frame-2-2 img {
+    height: 100%;
+    border-radius: 45px;
+    object-fit: cover;
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+    .demo-frame-1-2 {
+        text-align: right;
+    }
+
+/* : See Other Studies */
+.other-studies-body {
+    margin: 0;
+    padding: 20px;
+}
+.other-studies {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+.narrow-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+}
+    .ncard-thumbnail {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-position: center center;
+        flex-direction: row;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        cursor:pointer;
+    }
+    #other-study1 {
+        grid-column: 3 / span 4;
+    }
+    #other-study2 {
+        grid-column: 7 / span 4;
+    }
+    .card-thumbnail {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        background-size: cover;
+    }
+    .wide-card-content {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+    }
 
 /* ----------------------- */
 /* Icon Styles */
@@ -538,7 +1011,28 @@ footer {
     border-radius: 50px;
     background-repeat: no-repeat;
 }
-
+.expand-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline;
+    width: 32px;
+    height: 24.38px;
+    background-image: url(../icons/et+edit_zoom_in.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shrink-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline;
+    width: 32px;
+    height: 24.38px;
+    background-image: url(../icons/et+edit_zoom\ out.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*Button Styles*/
 .primary-button {
     border: 1px solid black;
@@ -562,23 +1056,19 @@ footer {
     backdrop-filter: blur(8px);
     text-align: center;
 }
-
 .button:hover {
     background-color: rgb(241,214,219);
 }
-
 .button:active:hover {
     background-color: #0A1E63;
     color: #ffffff;
 }
-#tab1:hover {
-    background-image: url(../icons/side-tab1-hover.svg);
+.side-tab img:hover {
+    border-radius: 50px;
+    background-color: rgb(241, 214, 219);
 }
-#tab2:hover {
-    background-image: url(../icons/side-tab2-hover.svg);
-}
-#tab3:hover {
-    background-image: url(../icons/side-tab3-hover.svg);
+.click-image {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 }
 
 /* Typography */
@@ -586,6 +1076,10 @@ p {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
+    .side {
+        font-size: 14px;
+        font-weight: bold;
+    }
 .paragraphs {
     flex-direction: column;
 }
@@ -609,7 +1103,28 @@ h2 {
 .bold {
     font-weight: bold;
 }
-
+.state {
+    font-size: 24px;
+}
+.centered {
+    text-align: center;
+}
+.ulist {
+    list-style-type: none;
+    list-style-position: inside;
+}
+    .ulist li ::before {
+        content: "\2022";
+        color: #0A1E63;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
 .primary-button {
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
@@ -645,9 +1160,17 @@ h2 {
 .wide-card-content {
     grid-column: -3 / -6;
     grid-row: 1 / -1;
-} 
-
 }
+.click-image {
+    overflow: hidden;
+    height: 400px;
+}
+.bullet, .active-bullet {
+    width: 16px;
+    height: 16px;
+}
+}
+
 @media only screen and (max-width: 1000px) {
 .logo {
     display: none;
@@ -693,6 +1216,7 @@ h2 {
 #menu {
     padding-bottom: 20px;
 }
+    
 /* Hero Styles */
 .hero {
     grid-template-columns: repeat(4, 1fr);
@@ -779,6 +1303,8 @@ footer {
         position: absolute;
         bottom: 10px;
         margin: 0 auto;
+        left: calc(50vw - 16px);
+        right: calc(50vw - 16px);
     }
 #see-resume {
     align-items: center;
@@ -798,6 +1324,27 @@ footer {
 #about-me {
     grid-column: 1 / -1;
 }
+/* Case Study Side Navigation */
+.side-case-menu {
+    position: fixed;
+    width: 100%;
+    min-height: 0;
+    top: 70px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(241,214,219,0.25);
+    backdrop-filter: blur(8px);
+}
+    .side-tab {
+        flex: 0 0 auto;
+    }
+    /* .side-tab img {
+        width: 32px;
+    } */
 /* UX Skills */
 #my-skills-body {
     grid-template-columns: 1fr;
@@ -810,7 +1357,7 @@ footer {
 }
     #my-skills h2 {
         text-align: center;
-    }
+    } */
 .ux-skill {
     flex-direction: column;
 }
@@ -823,13 +1370,42 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-column: 1 / -1;
 }
-    #tool-set h2 {
+    /* #tool-set h2 {
         text-align: center
-    }
+    } */
     .tool-row {
         grid-column: 1 / -1;
     }
 .tool-tile {
     min-width:200px;
 }
-/* Button Styles */}
+/* Case Study: Hero */
+.case-hero {
+    grid-template-columns: repeat(4, 1fr);
+}
+    .case-img1 {
+        grid-column: 1 / -1;
+    }
+/* Case Study: Summary */
+.summary, .case-p-section {
+    display: flex;
+    flex-direction: column;
+}
+.summary-body, .case-p-body {
+    display: flex;
+    flex-direction: column;
+}
+/* Case Study : Problem Statement */
+.quotation-start {
+    width: 32px;
+    height: 32px;
+    left: 20px;
+    margin-top: -88px;
+}
+.quotation-end {
+    width: 32px;
+    height: 32px;
+    right: 20px;
+    margin-top: -36px;
+}
+}
