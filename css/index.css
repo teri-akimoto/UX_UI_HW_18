@@ -300,10 +300,10 @@ HOME PAGE
     background-image: url(../images/Endangered/endangered\ species\ all\ devices\ cover.png);
 }
 #card-thumbnail2 {
-    background-image: url(../images/emotion/emotion\ cover.png);
+    background-image: url(../images/emotion/emotion-cover.png);
 }
 #card-thumbnail3 {
-    background-image: url(../images/Coral/CORAL\ all\ devices\ cover.png);
+    background-image: url(../images/Coral/CORAL-all-devices-cover.png);
 }
 .card-description {
     padding-bottom: 40px;
@@ -766,6 +766,9 @@ min-height: 50vh;
     width: auto;
     margin-bottom: 80px;
 }
+.wide-case-p {
+    grid-column: 3 / -3;
+}
 .case-p-section {
     grid-column: 3 / -2;
     display: grid;
@@ -1062,16 +1065,13 @@ min-height: 50vh;
     margin-bottom: 40px;
 }
 .x1-2 {
-    grid-column: 1 / span 5;
+    grid-column: 3 / span 3;
 }
 .x2-2 {
-    grid-column: 7 / span 5;
-}
-.x1-2 div {
-    text-align: right;
+    grid-column: 8 / span 3;
 }
 .x1-2 div, .x2-2 div {
-    display: grid;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
 }
@@ -1423,6 +1423,7 @@ footer {
     flex-direction: column;
     margin-bottom: 40px;
 }
+
 .final-toggle {
     margin-bottom: 40px;
 }
